@@ -1,0 +1,26 @@
+#pragma once
+#include <cstddef>
+
+namespace connotes::version {
+
+inline constexpr std::size_t major()
+{
+	return @PROJECT_VERSION_MAJOR@;
+}
+
+inline constexpr std::size_t minor()
+{
+	return @PROJECT_VERSION_MINOR@;
+}
+
+inline constexpr std::size_t patch()
+{
+	return @PROJECT_VERSION_PATCH@;
+}
+
+inline constexpr auto string()
+{
+	return "@PROJECT_VERSION@";
+}
+
+} // namespace connotes::version
